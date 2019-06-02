@@ -1,0 +1,2 @@
+scrapy==1.6.0
+pymysql==0.9.3
