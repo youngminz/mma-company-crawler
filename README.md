@@ -40,3 +40,23 @@ CREATE TABLE `company` (
 - `mma/pipelines.py`의 `SaveToMySQL` 에 들어가는 데이터베이스 연결 파라미터를 적절히 수정하세요.
 - MySQL에 저장하는 기능을 끄고 싶으면 `mma/settings.py` 에서 `ITEM_PIPELINES` 를 수정하시면 됩니다.
 - `scrapy crawl mma` 으로 크롤링을 시작하세요.
+
+## 피플펀드는 2019년, 보충역을 얼마나 채용했나요?
+
+```mysql
+SELECT 업체명,
+       보충역편입인원,
+       보충역복무인원
+FROM   company
+WHERE  지방청 = '서울'
+       AND 업종 = '정보처리'
+ORDER  BY 보충역편입인원 DESC; 
+```
+
+- 2019년 6월 4일 기준, 피플펀드는 보충역을 2명 채용하였습니다.
+- 서울청 중 정보처리 업체는 총 446개이며, 이 중 피플펀드는 3위를 차지하였습니다.
+- 전체 업체 목록은 [stats_20190604.csv](stats_20190604.csv) 파일을 참고하세요.
+
+## 채용
+
+[피플펀드는 산업기능요원 전직/보충역을 채용하고 있습니다!](https://www.peoplefund.co.kr/recruit)
