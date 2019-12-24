@@ -61,4 +61,4 @@ ORDER  BY 보충역편입인원 DESC;
 
 ## 채용
 
-[피플펀드는 산업기능요원 전직/보충역을 채용하고 있습니다!](https://www.peoplefund.co.kr/recruit)
+[피플펀드는 산업기능요원 현역/보충역의 신규/전직 채용하고 있습니다!](https://github.com/peoplefund-tech/careers/blob/master/README.md)
