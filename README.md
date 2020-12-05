@@ -9,7 +9,7 @@
 ## 어떻게 사용하나요?
 
 - python 3.6 이상을 설치하세요.
-- `pip install requirements.txt`
+- `pip install -r requirements.txt`
 - mysql에 데이터베이스를 저장하려면 테이블을 만들어야 합니다.
 ```mysql
 CREATE TABLE `company` (
